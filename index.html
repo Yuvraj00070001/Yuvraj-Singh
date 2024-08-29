@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Railways</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quick Railways Reservation System</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-button">Home</a></li>
+                <li><a href="#" id="about-button">About</a></li>
+                <li><a href="#" id="trains-button">Trains</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page Section -->
+        <section id="home-section">
+            <h2>Currently Running Trains in India</h2>
+            <div id="train-info"></div>
+
+            <h2>Reserve Your Seat</h2>
+            <form id="train-search-form">
+                <label for="source">Source:</label>
+                <input type="text" id="source" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" required>
+
+                <label for="date">Date of Journey:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="hidden">
+            <h2>About Quick Railways</h2>
+            <p>Quick Railways is a comprehensive railway reservation system designed to help users find and reserve seats on trains across India. Our goal is to provide a seamless experience for users to book their train tickets with ease.</p>
+            <p>This project was developed by Yuvraj Singh, who is dedicated to creating efficient and user-friendly applications.</p>
+        </section>
+
+        <!-- Trains Section -->
+        <section id="trains-section" class="hidden">
+            <h2>Train Details</h2>
+            <div id="train-details">
+                <p><strong>New Delhi - Howrah Rajdhani Express</strong> (Train No. 12301/12302): Route - New Delhi to Howrah</p>
+                <p><strong>Mumbai - Ahmedabad Shatabdi Express</strong> (Train No. 12009/12010): Route - Mumbai to Ahmedabad</p>
+                <p><strong>Kolkata - Amritsar Akal Takht Express</strong> (Train No. 12317/12318): Route - Kolkata to Amritsar</p>
+                <p><strong>Bangalore - New Delhi Duronto Express</strong> (Train No. 12213/12214): Route - Bangalore to New Delhi</p>
+                <p><strong>Chennai - Mysore Shatabdi Express</strong> (Train No. 12007/12008): Route - Chennai to Mysore</p>
+                <p><strong>Secunderabad - Visakhapatnam Garib Rath Express</strong> (Train No. 12739/12740): Route - Secunderabad to Visakhapatnam</p>
+                <p><strong>Mumbai - Goa Mandovi Express</strong> (Train No. 10103/10104): Route - Mumbai to Goa</p>
+                <p><strong>Patna - New Delhi Rajendra Nagar Rajdhani Express</strong> (Train No. 12309/12310): Route - Patna to New Delhi</p>
+                <p><strong>Jaipur - Mumbai Bandra Terminus Superfast Express</strong> (Train No. 12979/12980): Route - Jaipur to Mumbai</p>
+                <p><strong>Bengaluru - Ernakulam Intercity Express</strong> (Train No. 12677/12678): Route - Bengaluru to Ernakulam</p>
+            </div>
+        </section>
+
+        <!-- Other sections here -->
+        <section id="train-list-section" class="hidden">
+            <h2>Available Trains</h2>
+            <div id="train-list"></div>
+        </section>
+
+        <section id="reservation-section" class="hidden">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" required>
+
+                <label for="train">Selected Train:</label>
+                <input type="text" id="train" readonly>
+
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section id="confirmation-section" class="hidden">
+            <h2>Booking Confirmation</h2>
+            <p id="confirmation-message"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
